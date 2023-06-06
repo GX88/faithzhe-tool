@@ -1,0 +1,35 @@
+{
+  "name": "faithzhe-tool",
+  "version": "0.0.7",
+  "description": "faithzhe utils",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean:cache": "rm -rf node_modules && pnpm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "utils",
+    "tool"
+  ],
+  "author": "Baizhe",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^6.7.0"
+  }
+}
